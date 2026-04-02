@@ -1,0 +1,76 @@
+/* ───────── Base Reset ───────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ───────── Design Tokens ───────── */
+:root {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  --bg:           #f8f7f4;
+  --surface:      #ffffff;
+  --surface2:     #f2f1ee;
+  --border:       rgba(0,0,0,0.08);
+  --border2:      rgba(0,0,0,0.14);
+  --text1:        #1a1917;
+  --text2:        #6b6a67;
+  --text3:        #a09f9c;
+
+  --accent:       #185FA5;
+  --accent-light: #E6F1FB;
+  --accent-text:  #0C447C;
+
+  --green:        #3B6D11;
+  --green-bg:     #EAF3DE;
+  --red:          #A32D2D;
+  --red-bg:       #FCEBEB;
+  --amber:        #854F0B;
+  --amber-bg:     #FAEEDA;
+
+  --radius-sm:    8px;
+  --radius-md:    12px;
+  --radius-lg:    14px;
+  --radius-xl:    18px;
+
+  --sidebar-w:    228px;
+  --transition:   0.2s ease;
+}
+
+/* ───────── Dark Mode Tokens ───────── */
+.dark {
+  --bg:           #141413;
+  --surface:      #1e1d1b;
+  --surface2:     #2a2927;
+  --border:       rgba(255,255,255,0.08);
+  --border2:      rgba(255,255,255,0.14);
+  --text1:        #f0ede8;
+  --text2:        #9a9894;
+  --text3:        #5c5b58;
+
+  --accent:       #378ADD;
+  --accent-light: #0c1e30;
+  --accent-text:  #85B7EB;
+
+  --green:        #97C459;
+  --green-bg:     #1a2a0d;
+  --red:          #F09595;
+  --red-bg:       #2d1212;
+  --amber:        #EF9F27;
+  --amber-bg:     #2a1e08;
+}
+
+/* ───────── Base Elements ───────── */
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text1);
+  line-height: 1.6;
+  transition: background var(--transition), color var(--transition);
+}
+
+button { cursor: pointer; font-family: var(--font-sans); }
+input, select, textarea { font-family: var(--font-sans); }
+
+/* ───────── Scrollbar ───────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
