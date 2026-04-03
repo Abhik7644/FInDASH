@@ -1,0 +1,38 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.header { margin-bottom: 0.25rem; }
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--text1);
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--text2);
+  margin-top: 3px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.chartsRow {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .chartsRow { grid-template-columns: 1fr; }
+  .metricsGrid { grid-template-columns: repeat(2, 1fr); }
+  .title { font-size: 18px; }
+}

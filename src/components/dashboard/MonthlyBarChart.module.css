@@ -1,0 +1,63 @@
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 90px;
+  margin-top: 14px;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.pair {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  width: 100%;
+  justify-content: center;
+}
+
+.barInc {
+  width: 12px;
+  background: #378ADD;
+  border-radius: 3px 3px 0 0;
+  transition: height 0.5s ease;
+}
+
+.barExp {
+  width: 12px;
+  background: #E24B4A;
+  border-radius: 3px 3px 0 0;
+  transition: height 0.5s ease;
+}
+
+.label {
+  font-size: 9px;
+  color: var(--text3);
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--text3);
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
