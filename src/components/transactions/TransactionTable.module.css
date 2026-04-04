@@ -1,0 +1,46 @@
+.wrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead th {
+  padding: 10px 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text3);
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  white-space: nowrap;
+  background: var(--surface2);
+}
+
+.table thead th:first-child { border-radius: var(--radius-lg) 0 0 0; }
+.table thead th:last-child  { border-radius: 0 var(--radius-lg) 0 0; }
+
+.table tbody td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text1);
+  vertical-align: middle;
+}
+
+.table tbody tr:last-child td { border-bottom: none; }
+.table tbody tr:hover td { background: var(--surface2); }
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text3);
+  white-space: nowrap;
+}
+
+.desc { font-weight: 500; }
+
+.amount { font-family: var(--font-mono); }
+.income  { color: var(--green); }
+.expense { color: var(--red);   }

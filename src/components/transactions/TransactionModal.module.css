@@ -1,0 +1,41 @@
+.form { display: flex; flex-direction: column; gap: 12px; }
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.row { display: flex; flex-direction: column; gap: 5px; }
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text2);
+}
+
+.input {
+  width: 100%;
+  font-size: 13px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border2);
+  background: var(--surface2);
+  color: var(--text1);
+  font-family: var(--font-sans);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(24, 95, 165, 0.12);
+  background: var(--surface);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
